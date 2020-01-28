@@ -1,0 +1,56 @@
+.main-div {
+  position: relative;
+}
+
+.inspired-background {
+  width: 100%;
+  height: 100vh;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(19, 19, 19, 0.2);
+}
+
+.navigation-logo {
+  margin-left: 50px;
+  font-size: 23px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.navigation-direct {
+  font-size: 16px;
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.navigation-direct-signup {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation-direct-login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation-direct-signup:hover {
+  border-bottom: 3px solid #fff;
+  cursor: pointer;
+}
+
+.navigation-direct-login:hover {
+  border-bottom: 3px solid #fff;
+  cursor: pointer;
+}
