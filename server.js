@@ -21,12 +21,12 @@ app.use(express.urlencoded({ extended: true }));
 //Express handlebars
 var exphbs = require("express-handlebars");
 
-app.engine("handlebar", exphbs({ defaultLayout: "main" }));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 //Require routes
-require("./controllers/html-routes")(app);
 require("./controllers/api-routes")(app);
+require("./controllers/html-routes")(app);
 
 //Start server
 app.listen(PORT, function() {
