@@ -25,9 +25,44 @@
         <input type="date" placeholder="mm/dd/yyyy" />
       </div>
     </div>
-    <div class="form-guests form-common">
+    <div class="form-guests">
       <label>GUESTS</label>
-      <input type="text" placeholder="Guests" />
+      <button id="guests" class="form-guests-button">
+        <div>Guests</div>
+        <div><img width="10px" src="images/caret-down-solid.svg" /></div>
+      </button>
+      <div class="dropdown">
+        <div class="dropdown-adults">
+          <div>Adults</div>
+          <div class="dropdown-count">
+            <div class="circle" id="adults-minus">-</div>
+            <div id="adults-count">0</div>
+            <div class="circle" id="adults-plus">+</div>
+          </div>
+        </div>
+        <div class="dropdown-children">
+          <div>
+            <div>Children</div>
+            <div>Age 2-12</div>
+          </div>
+          <div class="dropdown-count">
+            <div class="circle">-</div>
+            <div id="children-count">0</div>
+            <div class="circle">+</div>
+          </div>
+        </div>
+        <div class="dropdown-infants">
+          <div>
+            <div>Infants</div>
+            <div>Under 2</div>
+          </div>
+          <div class="dropdown-count">
+            <div class="circle">-</div>
+            <div id="infants-count">0</div>
+            <div class="circle">+</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="form-search">
