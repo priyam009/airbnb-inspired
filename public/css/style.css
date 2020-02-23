@@ -126,3 +126,40 @@
   color: #fff;
   border-radius: 5px;
 }
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.dropdown div {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.dropdown-children > div:first-child {
+  margin: 0;
+}
+
+.dropdown-infants > div:first-child {
+  margin: 0;
+}
+
+.dropdown-count {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  border: 1px solid #121212;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
