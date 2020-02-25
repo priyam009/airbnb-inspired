@@ -27,4 +27,32 @@ function addAdults() {
     event.preventDefault();
     $("#adults-count").text(parseInt($("#adults-count").text()) + 1);
   });
-});
+}
+
+function addChildren() {
+  $("#children-minus").on("click", function() {
+    event.preventDefault();
+    if (parseInt($("#children-count").text()) > 0) {
+      $("#children-count").text(parseInt($("#children-count").text()) - 1);
+    }
+  });
+
+  $("#children-plus").on("click", function() {
+    event.preventDefault();
+    $("#children-count").text(parseInt($("#children-count").text()) + 1);
+  });
+}
+
+function addInfants() {
+  $("#children-minus").on("click", function() {
+    event.preventDefault();
+    if (parseInt($("#children-count").text()) > 0) {
+      $("#children-count").text(parseInt($("#children-count").text()) - 1);
+    }
+  });
+
+  $("#children-plus").on("click", function() {
+    event.preventDefault();
+    $("#children-count").text(parseInt($("#children-count").text()) + 1);
+  });
+}
