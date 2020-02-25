@@ -47,15 +47,15 @@ function addChildren() {
 }
 
 function addInfants() {
-  $("#children-minus").on("click", function() {
+  $("#infants-minus").on("click", function() {
     event.preventDefault();
-    if (parseInt($("#children-count").text()) > 0) {
-      $("#children-count").text(parseInt($("#children-count").text()) - 1);
+    if (parseInt($("#infants-count").text()) > 0) {
+      $("#infants-count").text(parseInt($("#infants-count").text()) - 1);
     }
   });
 
-  $("#children-plus").on("click", function() {
+  $("#infants-plus").on("click", function() {
     event.preventDefault();
-    $("#children-count").text(parseInt($("#children-count").text()) + 1);
+    $("#infants-count").text(parseInt($("#infants-count").text()) + 1);
   });
 }
