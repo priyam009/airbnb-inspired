@@ -8,6 +8,9 @@ function guestDropdown() {
     if($(".dropdown").attr("data-toggle") === "false") {
       $(".dropdown").css("visibility", "visible");
       $(".dropdown").attr("data-toggle", true);
+      addAdults();
+      addChildren();
+      addInfants();
     } else {
       $(".dropdown").css("visibility", "hidden");
       $(".dropdown").attr("data-toggle", false);
