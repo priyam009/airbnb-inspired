@@ -65,10 +65,33 @@ function addInfants() {
     if (parseInt($("#infants-count").text()) > 0) {
       $("#infants-count").text(parseInt($("#infants-count").text()) - 1);
     }
+    updateGuestsInput();
   });
 
   $("#infants-plus").on("click", function() {
     event.preventDefault();
     $("#infants-count").text(parseInt($("#infants-count").text()) + 1);
+    updateGuestsInput();
   });
+}
+
+//Close Guests Dropdown when click outside anywhere on the screen
+function closeDropdown() {}
+
+//Count the total updated adults, children and infants and update on the Guests input
+function updateGuestsInput() {
+  //Individual Guest Count
+  let adultCount = parseInt($("#adults-count").text());
+  let childrenCount = parseInt($("#children-count").text());
+  let infantCount = parseInt($("#infants-count").text());
+
+  //Total Guesnt Count
+  let count = adultCount+childrenCount+infantCount;
+
+  //Select first div and update Guest count text
+  if(count > 0) {
+    $("#guests").children().first().text("Guests: " + count);
+  } else {
+    $("#guests").children().first().text("Guests");
+  }
 }
