@@ -1,23 +1,30 @@
 $(document).ready(function() {
   guestDropdown();
+  addAdults();
+  addChildren();
+  addInfants();
+  closeDropdown();
 });
 
+//Toggle Guests Dropdown
 function guestDropdown() {
   $("#guests").on("click", function(event) {
     event.preventDefault();
-    if($(".dropdown").attr("data-toggle") === "false") {
+
+    //Open dropdown
+    if ($(".dropdown").attr("data-toggle") === "false") {
       $(".dropdown").css("visibility", "visible");
       $(".dropdown").attr("data-toggle", true);
-      addAdults();
-      addChildren();
-      addInfants();
-    } else {
+    }
+    //Close dropdown
+    else {
       $(".dropdown").css("visibility", "hidden");
       $(".dropdown").attr("data-toggle", false);
     }
   });
 }
 
+//Update total number of Adults count
 function addAdults() {
   $("#adults-minus").on("click", function() {
     event.preventDefault();
@@ -32,6 +39,7 @@ function addAdults() {
   });
 }
 
+//Update total number of Children count
 function addChildren() {
   $("#children-minus").on("click", function() {
     event.preventDefault();
@@ -46,6 +54,7 @@ function addChildren() {
   });
 }
 
+//Update total number of Infants count
 function addInfants() {
   $("#infants-minus").on("click", function() {
     event.preventDefault();
