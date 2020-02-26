@@ -3,7 +3,7 @@ $(document).ready(function() {
   addAdults();
   addChildren();
   addInfants();
-  closeDropdown();
+  updateGuestsInput();
 });
 
 //Toggle Guests Dropdown
