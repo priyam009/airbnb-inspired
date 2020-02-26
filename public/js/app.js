@@ -30,12 +30,14 @@ function addAdults() {
     event.preventDefault();
     if (parseInt($("#adults-count").text()) > 0) {
       $("#adults-count").text(parseInt($("#adults-count").text()) - 1);
+      updateGuestsInput();
     }
   });
 
   $("#adults-plus").on("click", function() {
     event.preventDefault();
     $("#adults-count").text(parseInt($("#adults-count").text()) + 1);
+    updateGuestsInput();
   });
 }
 
@@ -46,11 +48,13 @@ function addChildren() {
     if (parseInt($("#children-count").text()) > 0) {
       $("#children-count").text(parseInt($("#children-count").text()) - 1);
     }
+    updateGuestsInput();
   });
 
   $("#children-plus").on("click", function() {
     event.preventDefault();
     $("#children-count").text(parseInt($("#children-count").text()) + 1);
+    updateGuestsInput();
   });
 }
 
